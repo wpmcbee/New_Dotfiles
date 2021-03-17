@@ -1,0 +1,7 @@
+# Don't ignore anything.
+!*
+# Ignore backup files
+.*~
+.*saved*
+*~
+.AppleDouble

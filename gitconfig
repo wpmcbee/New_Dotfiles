@@ -1,0 +1,14 @@
+[user]
+	name = William McBee
+	mail = wpmcbee@pobox.com
+	email = wpmcbee@pobox.com
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[credential]
+	helper = osxkeychain
+[github]
+	user = wpmcbee
+	oauth-token = 986be87e8255a99f5a7899a9150baf8a29ffb3fb
