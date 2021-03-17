@@ -1,4 +1,5 @@
-#  Time-stamp: "2021-03-12 20:48:13 William P. McBee Jr."
+# -*- mode: shell-script -*-
+#  Time-stamp: "2021-03-17 17:44:43 William P. McBee Jr."
 
 # is $1 missing from $2 (or PATH) ?
     no_path() {
