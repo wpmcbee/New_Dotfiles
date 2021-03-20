@@ -1,5 +1,5 @@
 # -*- mode: shell-script -*-
-#  Time-stamp: "2021-03-17 17:44:43 William P. McBee Jr."
+#  Time-stamp: "2021-03-20 01:08:53 William P. McBee Jr."
 
 # is $1 missing from $2 (or PATH) ?
     no_path() {
@@ -24,7 +24,7 @@
     export -f del_path
 
     export OS=`uname`
-    export ORGANIZATION="Interactic Holdings, LLC"
+#    export ORGANIZATION="Interactic Holdings, LLC"
     export ANSIBLE_NOCOWS=1
 
     # exit here if not interactive

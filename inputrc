@@ -1,0 +1,28 @@
+$if bash
+# Macros that are convenient for shell interaction
+# edit the path
+"\C-xp": "PATH=${PATH}\e\C-e\C-a\ef\C-f"
+# prepare to type a quoted word
+# insert open and close double quotes
+# and move to just after the open quote
+"\C-x\"": "\"\"\C-b"
+# insert a backslash (testing backslash escapes
+# in sequences and macros)
+"\C-x\\": "\\"
+# Quote the current or previous word
+"\C-xq": "\eb\"\ef\""
+# Add a binding to refresh the line which is unbound
+"\C-xr": redraw-current-line
+# Edit variable on current line
+"\e\C-v": "\C-a\C-k$\C-y\e\C-e\C-a\C-y="
+#
+"\C-Xd":  dump-macros
+# F1 is used for help in some apps
+# "\eOP": "mediamangler"
+# F2
+"\eOQ": "mediamangler"
+# F3
+"\eOR": "\"William McBee\""
+# F4
+"\eOS": "ssh -t saturn ssh 192.168.1.2"
+$endif

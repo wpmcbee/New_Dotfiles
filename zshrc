@@ -1,5 +1,5 @@
 export OS=`uname`
-export ORGANIZATION="Interactic Holdings, LLC"
+# export ORGANIZATION="Interactic Holdings, LLC"
 export ANSIBLE_NOCOWS=1
 
 # exit here if not interactive
@@ -25,6 +25,7 @@ alias df='df -lPH'
 alias lf='ls -FC'
 alias ..='cd ..'
 alias ss='ps uax'
+alias back='cd -'
 alias clean='rm -i [%~#^,]* .*.{OLD,BAK,bak,backup} *.{OLD,BAK,bak,backup} *[%~#^,] .*[%~#^,] core*'
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 alias lsuid="print -l \${^path}/*(Ns,S)"
