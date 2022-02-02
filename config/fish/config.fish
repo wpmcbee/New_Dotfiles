@@ -17,8 +17,10 @@ if status --is-interactive; and ! set -q INSIDE_EMACS
 switch $OS
     case Darwin
 	set -Ux OS_VERSION (sw_vers -productVersion)
-	test -r /usr/local/bin/brew; and eval (/usr/local/bin/brew shellenv)
-        set -e PATH[1 2]
+        if test -r /usr/local/bin/brew
+            set -e PATH[1 2] # remove HomeBrew paths so shellenv will run
+            eval (/usr/local/bin/brew shellenv)
+        end
 
     case Linux
 	test -d ~/.linuxbrew; and eval (~/.linuxbrew/bin/brew shellenv)
