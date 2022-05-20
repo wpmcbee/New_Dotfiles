@@ -47,7 +47,7 @@ This function should only modify configuration layer settings."
      docker
      emacs-lisp
      git
-     github
+     ;;     github
      helpful
      ivy
      ibuffer
